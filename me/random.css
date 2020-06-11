@@ -90,7 +90,7 @@ ul a li:hover{
 	font-family:sans-serif; 
 }
 
-@media (max-width:860px)
+@media only screen and (min-width:860px)
 {
 	ul a li {
 		display:none;
