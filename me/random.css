@@ -1,0 +1,98 @@
+*{
+
+	padding: 0px;
+	margin:0px;
+}
+
+body {
+	overflow-x: hidden;
+  background: url("Itmeback.jpg");
+  background-position:0px 0px; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white;
+}
+
+.logotext{
+	display:inline-flex;
+	align-items:center;
+}
+
+.header ul {
+
+	float: right;
+}
+nav
+{
+	box-sizing: border-box;
+	height:90px;
+	background-color: #000;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+label img{
+padding-left: 20px;
+padding-right: 20px;
+width:120px;
+height:auto;
+}
+
+#name {
+line-height: 80px;
+padding :5px 20px 5px 20px;
+font-family: sans-serif;
+font-size: 20px;
+display: inline-flex;
+}
+
+ul a li {
+	padding :5px 20px 5px 20px;
+	list-style-type: none; 
+	line-height: 80px;
+	font-family: sans-serif;
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	color:#808080;
+}
+#underline {
+		border-bottom: 2px solid white;
+}
+ul a li:hover{
+	background-color:#808080;
+	color:white;
+}
+.box1{
+	display:flex;
+	box-sizing: border-box;
+	align-items: center;
+}
+.box2{
+
+	display:flex;
+	box-sizing: border-box;
+	margin-left: 50vw;
+	height:610px;
+	width:600px;
+	align-items: center;
+	justify-content: center;
+}
+.description{
+	display:inline-block;
+	width: 250px;
+	overflow: visible;
+	align-items: center;
+	line-height:60px;
+	padding: 40px 0px 40px 20px;
+	font-size: 30px;
+	font-family:sans-serif; 
+}
+
+@media screen and (max-width:860px )
+{
+	ul a li {
+		display:none;
+	}
+	
+}
