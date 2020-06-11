@@ -19,11 +19,24 @@ body {
 	display:inline-flex;
 	align-items:center;
 }
+.checkbtn{
+	font-size:30px;
+	float:right;
+    color: white;
+    padding: 25px 30px;
+    align-items: center;
+    cursor: pointer;
+    display:none;
+}
+#check{
+	display:none;
+}
 
 .header ul {
 
 	float: right;
 }
+
 .header
 {	width:100vw;
 	box-sizing: border-box;
@@ -90,13 +103,25 @@ ul a li:hover{
 	font-family:sans-serif; 
 }
 
-@media only screen and (min-width:860px)
+@media screen and (max-width:872px)
 {
-	ul a li {
-		display:none;
-	}
-
 	body {
     background-position: -200px 0px;
-  }
+   }
+   .checkbtn{
+    display:block;
+    }
+    ul{
+    	width=50
+    }
+    nav ul a li{
+    display: none;
+    }
+
+}
+@media screen and (max-width:605px)
+{
+	body {
+    background-position: -400px 0px;
+   }
 }
