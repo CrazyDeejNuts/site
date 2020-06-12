@@ -106,43 +106,16 @@ ul a li:hover{
 	font-size: 30px;
 	font-family:sans-serif; 
 }
-@media only screen and (max-width: 872px)
-{
-	ul{
-		position: fixed;
-		display: block;
-    padding :5px 20px 5px 20px;
-    margin-left:calc( 100vw - 176px);
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    margin-right: 5px; 
-    background-color: black;
-    left: 100%;
-    transition:ease 0.5s;
-	}
-	body {
-    background-position: -200px 0px;
-   }
-   .checkbtn img{
-    display:flex;
-    transition: ease 0.5s;
-    }
-    ul :hover{
-	background-color:#808080;
-	color:white;
-    }
- #check:checked~ label img{
-    transform: rotate(90deg);
-  
-    }
-    #check:checked ~ ul{
-    	left:0;
-    }
-}
+ 
 
-
-@media only screen and (max-device-width: 872px)
+@media only screen and (max-device-width: 872px),
+only screen and (max-width: 872px),
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (width: 872px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 872px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 872px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 872px),
+only screen and (                min-resolution: 192dpi) and (max-width: 872px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 872px) 
 {
 	ul{
 		position: fixed;
