@@ -107,17 +107,7 @@ ul a li:hover{
 	font-size: 30px;
 	font-family:sans-serif; 
 }
- 
-
-@media only screen and (max-device-width: 872px) and (orientation: portrait) ,
-only screen and (max-width: 872px),
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 872px) and (orientation: portrait) ,
-only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 872px) and (orientation: portrait) ,
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 872px) and (orientation: portrait) ,
-only screen and (        min-device-pixel-ratio: 2)      and (max-width: 872px) and (orientation: portrait) ,
-only screen and (                min-resolution: 192dpi) and (max-width: 872px) and (orientation: portrait) ,
-only screen and (                min-resolution: 2dppx)  and (max-width: 872px)  and (orientation: portrait) 
-{
+@media only screen and (max-width: 872px){
 	ul{
 		position: fixed;
 		display: block;
@@ -150,30 +140,66 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 872px) 
     	left:0;
     }
 }
-@media only screen and (max-device-width: 768px) and (orientation: portrait) ,
-only screen and (max-width: 768px),
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: portrait) ,
-only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: portrait) ,
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 768px) and (orientation: portrait) ,
-only screen and (        min-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: portrait) ,
-only screen and (                min-resolution: 192dpi) and (max-width: 768px) and (orientation: portrait) ,
-only screen and (                min-resolution: 2dppx)  and (max-width: 768px)  and (orientation: portrait) 
-{
+@media only screen and (max-width: 512px){
 	body {
-    background-position: -700px 0px;
-   }
-}
-@media only screen and (max-device-width: 500px) and (orientation: portrait) ,
-only screen and (max-width: 500px),
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 500px) and (orientation: portrait) ,
-only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 500px) and (orientation: portrait) ,
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 500px) and (orientation: portrait) ,
-only screen and (        min-device-pixel-ratio: 2)      and (max-width: 500px) and (orientation: portrait) ,
-only screen and (                min-resolution: 192dpi) and (max-width: 500px) and (orientation: portrait) ,
-only screen and (                min-resolution: 2dppx)  and (max-width: 500px)  and (orientation: portrait) 
-{
-	body {
-    background-position: -700px 0px;
+    background-position: -400px 0px;
    }
 }
 
+@media only screen and (max-device-width: 872px) and (orientation: portrait) ,
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-device-width: 872px) and (orientation: portrait) ,
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-device-width: 872px) and (orientation: portrait) ,
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-device-width: 872px) and (orientation: portrait) ,
+only screen and (        min-device-pixel-ratio: 2)      and (max-device-width: 872px) and (orientation: portrait) ,
+only screen and (                min-resolution: 192dpi) and (max-device-width: 872px) and (orientation: portrait) ,
+only screen and (                min-resolution: 2dppx)  and (max-device-width: 872px)  and (orientation: portrait) 
+{
+	ul{
+		position: fixed;
+		display: block;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: black;
+    left: 100%;
+    transition:ease 0.5s;
+    opacity: 50%;
+	}
+	ul a li {
+	display:block;
+	padding-left:calc(50vw - 50px);
+	padding-right:calc(50vw - 50px);
+	border-bottom: 1px solid #3D4548;
+    }
+	body {
+    background-position: -200px 0px;
+   }
+   .checkbtn img{
+    display:flex;
+    transition: ease 0.5s;
+    }
+    ul :hover{
+	background-color:#808080;
+	color:white;
+    }
+ #check:checked~ label img{
+    transform: rotate(90deg);
+  
+    }
+    #check:checked ~ ul{
+    	left:0;
+    }
+}
+@media only screen and (max-device-width: 768px) and (orientation: portrait) ,
+only screen and (max-device-width: 768px),
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-device-width: 768px) and (orientation: portrait) ,
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-device-width: 768px) and (orientation: portrait) ,
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-device-width: 768px) and (orientation: portrait) ,
+only screen and (        min-device-pixel-ratio: 2)      and (max-device-width: 768px) and (orientation: portrait) ,
+only screen and (                min-resolution: 192dpi) and (max-device-width: 768px) and (orientation: portrait) ,
+only screen and (                min-resolution: 2dppx)  and (max-device-width: 768px)  and (orientation: portrait) 
+{
+	body {
+    background-position: -700px 0px;
+   }
+}
