@@ -7,18 +7,19 @@
 body {
 	overflow: hidden;
 	height: 100vh;
-  background: url("Itmeback.jpg");
-  background-color: #3D4548;
-  background-position:0px 0px; 
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color:white;
+    background: url("Itmeback.jpg");
+    background-color: #3D4548;
+    background-position:0px 0px; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
 }
 
 .logotext{
 	display:inline-flex;
 	align-items:center;
+	height: 120px;
 }
 .burger{
 	display: inline;
@@ -38,7 +39,6 @@ body {
 }
 
 .header ul {
-
 	float: right;
 }
 
@@ -124,6 +124,7 @@ ul a li:hover{
 	body {
     background-position: -200px 0px;
    }
+
    .checkbtn img{
     display:flex;
     transition: ease 0.5s;
@@ -154,27 +155,49 @@ only screen and (        min-device-pixel-ratio: 2)      and (max-device-width: 
 only screen and (                min-resolution: 192dpi) and (max-device-width: 872px) and (orientation: portrait) ,
 only screen and (                min-resolution: 2dppx)  and (max-device-width: 872px)  and (orientation: portrait) 
 {
+	.header
+	{
+		height:140px;
+		line-height:60px;
+	}
+	label{
+		height: 100px;
+	}
+	label img{
+		padding-left: 20px;
+		padding-right: 20px;
+		width:160px;
+		height:100px;
+	}
+	   #name {
+		line-height: 80px;
+		font-size: 50px;
+	}
 	ul{
 		position: fixed;
 		display: block;
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: black;
-    left: 100%;
-    transition:ease 0.5s;
-    opacity: 50%;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: black;
+        left: 100%;
+        transition:ease 0.5s;
+        opacity: 50%;
 	}
 	ul a li {
 	display:block;
-	padding-left:calc(50vw - 50px);
-	padding-right:calc(50vw - 50px);
+	padding-left:calc(50vw - 45px);
+	padding-right:calc(50vw - 45px);
 	border-bottom: 1px solid #3D4548;
+    }
+    ul a{
+    	text-decoration: none;
     }
 	body {
     background-position: -200px 0px;
    }
    .checkbtn img{
+   	width:110px;
     display:flex;
     transition: ease 0.5s;
     }
