@@ -169,6 +169,9 @@ only screen and (                min-resolution: 2dppx)  and (max-device-width: 
 		width:160px;
 		height:100px;
 	}
+.logotext{
+	height: 120px;
+}
 	   #name {
 		line-height: 80px;
 		font-size: 50px;
